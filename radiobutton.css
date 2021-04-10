@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/wavee.png");
+  background: url("../img/wavee.png") no-repeat center fixed; 
+  background-size: cover;
+  background-color: #121212;
+}
+
+header img {
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; 
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #ffbb03;
+   text-align: center;
+}
+
+
+
+:root {
+    font-size: 10px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+	text-decoration: none;
+	margin-top: -15%
+}
+
+nav li {
+    width: 20rem;
+    height: 7rem;
+    font-size: 20px;
+    text-align: center;
+    line-height:7rem;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+	text-decoration: none;
+    transition: 0.3s;
+    margin: 3rem;
+}
+
+nav li::before,
+nav li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+nav li::before {
+  
+    background-color: white;
+    z-index: -1;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+nav li::after {
+    background-color: #ffbb03;
+    transform: translate(1.5rem, 1.5rem);
+    z-index: -2;
+}
+
+nav li:hover {
+    transform: translate(1.5rem, 1.5rem);
+    color: white;
+}
+
+nav li:hover::before {
+    background-color: #ffbb03;
+    text-decoration: none
+}
+
+nav li:hover::after {
+    background-color: white;
+    transform: translate(-1.5rem, -1.5rem);
+}
+
+a:link {
+  text-decoration: none;
+  color: #121212
+}
+
+a:visited {
+  text-decoration: none;
+  color: #121212
+}
+
+a:hover {
+  text-decoration: none;
+  color: #121212
+}
+
+a:active {
+  text-decoration: none;
+  color: #121212
+}
